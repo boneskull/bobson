@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const {Names, Name} = require('../lib/names');
 
@@ -9,9 +10,9 @@ const surnames = new Names('surnames');
   Promise.all([
     firstnames.pick(),
     surnames.pick()
-  ]).then(([firstname, surname]) => {
-    const name = new Name(firstname, surname);
-
-  })
+  ])
+    .then(([firstname, surname]) => {
+      const name = new Name(firstname, surname);
+      console.log(String(name.mutate()));
+    });
 }());
-

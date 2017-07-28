@@ -1,5 +1,5 @@
 extends: semistandard
-parseOptions:
+parserOptions:
   sourceType: script
 rules:
   strict:

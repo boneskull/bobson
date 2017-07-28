@@ -5,15 +5,11 @@
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
   "license": "MIT",
   "dependencies": {
-    "group-stream": "^3.0.0",
     "lodash": "^4.17.4",
-    "median": "^0.0.2",
-    "pronounceable": "^1.0.1",
     "random-js": "^1.0.8",
-    "rxjs": "^5.3.1",
+    "rxjs": "^5.4.2",
     "statistics": "^3.3.0",
-    "stochator": "^0.6.2",
-    "through2": "^2.0.3"
+    "stochator": "^0.6.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
