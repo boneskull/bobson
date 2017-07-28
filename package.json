@@ -1,7 +1,10 @@
 {
-  "name": "ballplayers",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "bobson",
+  "version": "0.1.0",
+  "main": "lib/names.js",
+  "bin": {
+    "bobson": "bin/bobson.js"
+  },
   "author": "Christopher Hiller <boneskull@boneskull.com> (https://boneskull.com/)",
   "license": "MIT",
   "dependencies": {
@@ -21,5 +24,9 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boneskull/bobson.git"
   }
 }
