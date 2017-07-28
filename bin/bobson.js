@@ -2,6 +2,8 @@
 'use strict';
 
 const {Names, Name} = require('../lib/names');
+const Twit = require('twit');
+const config = require('../lib/config');
 
 const firstnames = new Names('firstnames');
 const surnames = new Names('surnames');
@@ -13,6 +15,13 @@ const surnames = new Names('surnames');
   ])
     .then(([firstname, surname]) => {
       const name = new Name(firstname, surname);
-      console.log(String(name.mutate()));
+      const status = String(name.mutate());
+      console.log(status);
+
+      const T = new Twit(config);
+      return T.post('statuses/update', {status});
+    })
+    .then(() => {
+      console.error('OK');
     });
 }());
