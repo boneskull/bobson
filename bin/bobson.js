@@ -3,6 +3,4 @@
 /* eslint-disable strict */
 'use strict';
 
-require('@std/esm');
-
-require('../lib/cli');
+require('@std/esm')(module)('../lib/cli');
